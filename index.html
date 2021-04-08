@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>POST</h1>
+    <form id="postForm" action="javascript:void(0)">
+        <input type="text" id="postTitle" placeholder="title">
+        <br>
+        <input type="text" id="postBody" placeholder="post">
+        <br>
+        <input id="postButton" type="submit" value="submit post">
+    </form>
+
+    <h1>PATCH</h1>
+    <form id="patchForm" action="javascript:void(0)">
+        <input type="text" id="patchId" placeholder="ID of the post to patch">
+        <br>
+        <input type="text" id="patchTitle" placeholder="title">
+        <br>
+        <input type="text" id="patchBody" placeholder="patch">
+        <br>
+        <input id="patchButton" type="submit" value="patch the post">
+    </form>
+
+    <h1>DELETE</h1>
+    <form action="javascript:void(0)">
+        <input type="text" id="deleteId" placeholder="ID of the post to delete">
+        <br>
+        <input id="deleteButton" type="submit" value="delete post">
+    </form>
+
+    <h1>GET</h1>
+    <div id="posts">
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
